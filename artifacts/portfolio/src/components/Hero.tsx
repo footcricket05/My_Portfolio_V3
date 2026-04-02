@@ -121,8 +121,7 @@ export default function Hero() {
             <a
               key={social.label}
               href={social.href}
-              target="_blank"
-              rel="noopener noreferrer"
+              {...(social.href.startsWith("mailto:") ? {} : { target: "_blank", rel: "noopener noreferrer" })}
               data-testid={`link-social-${social.label.toLowerCase()}`}
               className="text-muted-foreground hover:text-primary transition-colors p-2 hover:bg-primary/10 rounded-full"
               aria-label={social.label}
