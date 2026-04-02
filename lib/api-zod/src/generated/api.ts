@@ -14,3 +14,24 @@ import * as zod from "zod";
 export const HealthCheckResponse = zod.object({
   status: zod.string(),
 });
+
+/**
+ * Submits a contact form message
+ * @summary Send a contact message
+ */
+export const sendContactMessageBodyNameMax = 100;
+
+export const sendContactMessageBodySubjectMax = 200;
+
+export const sendContactMessageBodyMessageMin = 10;
+export const sendContactMessageBodyMessageMax = 2000;
+
+export const SendContactMessageBody = zod.object({
+  name: zod.string().min(1).max(sendContactMessageBodyNameMax),
+  email: zod.string().email(),
+  subject: zod.string().min(1).max(sendContactMessageBodySubjectMax),
+  message: zod
+    .string()
+    .min(sendContactMessageBodyMessageMin)
+    .max(sendContactMessageBodyMessageMax),
+});

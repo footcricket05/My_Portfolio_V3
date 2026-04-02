@@ -5,9 +5,6 @@
  * API specification
  * OpenAPI spec version: 0.1.0
  */
-export interface HealthStatus {
-  status: string;
-}
 
 export interface ContactMessageInput {
   /**
@@ -26,14 +23,4 @@ export interface ContactMessageInput {
    * @maxLength 2000
    */
   message: string;
-}
-
-export interface ContactMessageResult {
-  success: boolean;
-  id: number;
-  message: string;
-}
-
-export interface ErrorResponse {
-  error: string;
 }
