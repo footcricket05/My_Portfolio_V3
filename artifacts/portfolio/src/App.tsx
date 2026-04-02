@@ -1,6 +1,7 @@
 import { Switch, Route, Router as WouterRouter } from "wouter";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ThemeProvider } from "./providers/ThemeProvider";
+import { setBaseUrl } from "@workspace/api-client-react";
 
 import Navigation from "./components/Navigation";
 import SettingsPanel from "./components/SettingsPanel";
@@ -14,6 +15,10 @@ import Certifications from "./components/sections/Certifications";
 import Contact from "./components/sections/Contact";
 
 const queryClient = new QueryClient();
+
+// Configure API base URL
+const apiUrl = import.meta.env.VITE_API_URL || "http://localhost:3000";
+setBaseUrl(apiUrl);
 
 function Portfolio() {
   return (
