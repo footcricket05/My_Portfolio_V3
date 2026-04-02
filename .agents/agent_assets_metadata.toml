@@ -1,0 +1,20 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "_avQQvGn0Iuv1_zB14cO-"
+uri = "file://artifacts/portfolio/src/assets/avatar.png"
+type = "image"
+title = "Abstract tech avatar illustration"
+
+[[generated]]
+id = "ZRlejWSGmW41B5KtBwPbl"
+uri = "file://artifacts/portfolio/src/assets/fuzzaiot.png"
+type = "image"
+title = "FuzzAIoT project thumbnail"
+
+[[generated]]
+id = "pdR3GHK0KxTOwW9M80dmj"
+uri = "file://artifacts/portfolio/src/assets/imageify.png"
+type = "image"
+title = "Imageify project thumbnail"

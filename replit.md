@@ -1,5 +1,20 @@
 # Workspace
 
+## Portfolio App
+
+Personal portfolio website for **Shaurya Srinet** — a dark, tech-forward single-page portfolio at `/`.
+
+- **Artifact**: `artifacts/portfolio` (React + Vite, TypeScript)
+- **Theme**: Dark space aesthetic with electric blue/violet gradient accents
+- **Font**: Space Grotesk (display) + Space Mono (monospace)
+- **Sections**: Hero (animated typewriter), About, Experience, Projects, Skills, Contact, Footer
+- **Key content**: CTO @ Stick & Dot, DRDO research, FuzzAIoT/Imageify/LangNexus/RetinaXpert projects, Azure certs (AZ-900/AI-900/DP-900), Oracle cert, SRMIST IoT B.Tech
+- **No backend** — presentation-first, all content hardcoded
+
+---
+
+
+
 ## Overview
 
 pnpm workspace monorepo using TypeScript. Each package manages its own dependencies.
