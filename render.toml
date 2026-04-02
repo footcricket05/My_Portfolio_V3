@@ -1,0 +1,24 @@
+[docs]
+  title = "Shaurya's Portfolio - API Server"
+  description = "Backend API for the portfolio website"
+  root = "artifacts/api-server"
+
+[[services]]
+  type = "web"
+  name = "portfolio-api"
+  displayName = "Portfolio API"
+  runtime = "node"
+  startCommand = "cd artifacts/api-server && pnpm run start"
+  buildCommand = "cd artifacts/api-server && pnpm install --ignore-scripts && pnpm run build"
+
+  [[services.envVars]]
+    key = "NODE_ENV"
+    value = "production"
+  
+  [[services.envVars]]
+    key = "PORT"
+    value = "3000"
+  
+  [[services.envVars]]
+    key = "DATABASE_URL"
+    scope = "runtime"

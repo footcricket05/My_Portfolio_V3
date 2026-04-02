@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "buildCommand": "cd artifacts/api-server && pnpm install --ignore-scripts && pnpm run build",
+  "outputDirectory": "artifacts/api-server/dist",
+  "framework": "express",
+  "functions": {
+    "artifacts/api-server/dist/index.mjs": {
+      "runtime": "nodejs20.x"
+    }
+  },
+  "env": {
+    "NODE_ENV": "production",
+    "PORT": "3000",
+    "DATABASE_URL": "@database_url"
+  },
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "artifacts/api-server/dist/index.mjs"
+    }
+  ]
+}

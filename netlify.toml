@@ -1,0 +1,16 @@
+[build]
+  publish = "artifacts/portfolio/dist/public"
+  command = "pnpm install --ignore-scripts && pnpm build"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[env]
+  [env.production]
+    VITE_API_URL = "https://your-api-domain.com"
+  [env.preview]
+    VITE_API_URL = "http://localhost:3000"
+  [env.dev]
+    VITE_API_URL = "http://localhost:3000"
