@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import { Cpu, Server, Database, Cloud, Wrench } from "lucide-react";
-import { SiPython, SiCplusplus, SiTensorflow, SiPytorch, SiKeras, SiScikitlearn, SiPostgresql, SiMysql, SiApachekafka, SiDocker, SiKubernetes, SiTerraform, SiGit, SiGithub } from "react-icons/si";
+import { Cpu, Server, Database, Cloud, Wrench, Shield, Zap, Lock } from "lucide-react";
+import { SiPython, SiCplusplus, SiJava, SiTensorflow, SiPytorch, SiKeras, SiScikitlearn, SiPostgresql, SiMysql, SiApachekafka, SiDocker, SiKubernetes, SiTerraform, SiGit, SiGithub, SiPostman, SiAmazonaws, SiApachespark } from "react-icons/si";
 
 const SKILL_CATEGORIES = [
   {
@@ -10,7 +10,7 @@ const SKILL_CATEGORIES = [
     skills: [
       { name: "Python", icon: <SiPython className="w-4 h-4" /> },
       { name: "C++", icon: <SiCplusplus className="w-4 h-4" /> },
-      { name: "Java", icon: null },
+      { name: "Java", icon: <SiJava className="w-4 h-4" /> },
       { name: "SQL", icon: <Database className="w-4 h-4" /> }
     ]
   },
@@ -22,9 +22,9 @@ const SKILL_CATEGORIES = [
       { name: "TensorFlow", icon: <SiTensorflow className="w-4 h-4" /> },
       { name: "PyTorch", icon: <SiPytorch className="w-4 h-4" /> },
       { name: "Keras", icon: <SiKeras className="w-4 h-4" /> },
-      { name: "LangChain", icon: null },
+      { name: "LangChain", icon: <Zap className="w-4 h-4" /> },
       { name: "Scikit-learn", icon: <SiScikitlearn className="w-4 h-4" /> },
-      { name: "PySpark", icon: null }
+      { name: "PySpark", icon: <SiApachespark className="w-4 h-4" /> }
     ]
   },
   {
@@ -42,13 +42,12 @@ const SKILL_CATEGORIES = [
     title: "IoT & Cloud",
     icon: <Cloud className="w-5 h-5" />,
     skills: [
-      { name: "Sensors & Protocols", icon: null },
-      { name: "IoT Security", icon: null },
-      { name: "5G", icon: null },
-      { name: "AWS", icon: <Cloud className="w-4 h-4" /> },
+      { name: "AWS", icon: <SiAmazonaws className="w-4 h-4" /> },
       { name: "Docker", icon: <SiDocker className="w-4 h-4" /> },
       { name: "Kubernetes", icon: <SiKubernetes className="w-4 h-4" /> },
-      { name: "Terraform", icon: <SiTerraform className="w-4 h-4" /> }
+      { name: "Terraform", icon: <SiTerraform className="w-4 h-4" /> },
+      { name: "IoT Security", icon: <Shield className="w-4 h-4" /> },
+      { name: "5G & Protocols", icon: <Zap className="w-4 h-4" /> }
     ]
   },
   {
@@ -56,14 +55,14 @@ const SKILL_CATEGORIES = [
     title: "Tools & Platforms",
     icon: <Wrench className="w-5 h-5" />,
     skills: [
-      { name: "SailPoint ISC", icon: null },
-      { name: "Okta", icon: null },
-      { name: "Microsoft Entra ID", icon: null },
-      { name: "Postman", icon: null },
+      { name: "SailPoint ISC", icon: <Lock className="w-4 h-4" /> },
+      { name: "Okta", icon: <Shield className="w-4 h-4" /> },
+      { name: "Microsoft Entra ID", icon: <Lock className="w-4 h-4" /> },
+      { name: "Postman", icon: <SiPostman className="w-4 h-4" /> },
       { name: "Git", icon: <SiGit className="w-4 h-4" /> },
-      { name: "Apache NiFi", icon: null },
       { name: "GitHub", icon: <SiGithub className="w-4 h-4" /> },
-      { name: "Alteryx", icon: null }
+      { name: "Apache NiFi", icon: <Server className="w-4 h-4" /> },
+      { name: "Alteryx", icon: <Wrench className="w-4 h-4" /> }
     ]
   }
 ];
