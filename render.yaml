@@ -12,3 +12,9 @@ services:
       - key: DATABASE_URL
         scope: run
         value: ${DATABASE_URL}
+      - key: GMAIL_USER
+        scope: run
+        value: ${GMAIL_USER}
+      - key: GMAIL_APP_PASSWORD
+        scope: run
+        value: ${GMAIL_APP_PASSWORD}

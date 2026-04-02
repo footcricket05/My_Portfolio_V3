@@ -1,6 +1,6 @@
 import { Router, type IRouter } from "express";
-import { db, contactMessages } from "@workspace/db";
 import { SendContactMessageBody } from "@workspace/api-zod";
+import { sendContactEmail } from "../lib/email.js";
 
 const router: IRouter = Router();
 
@@ -14,19 +14,15 @@ router.post("/contact", async (req, res) => {
   const { name, email, subject, message } = parseResult.data;
 
   try {
-    const [inserted] = await db
-      .insert(contactMessages)
-      .values({ name, email, subject, message })
-      .returning({ id: contactMessages.id });
+    await sendContactEmail(name, email, subject, message);
 
-    req.log.info({ id: inserted.id, email }, "Contact message received");
+    req.log.info({ email }, "Contact email sent");
     res.status(201).json({
       success: true,
-      id: inserted.id,
       message: "Thanks for reaching out! I'll get back to you soon.",
     });
   } catch (err) {
-    req.log.error({ err }, "Failed to save contact message");
+    req.log.error({ err }, "Failed to send contact email");
     res.status(500).json({ error: "Failed to send message. Please try again." });
   }
 });
