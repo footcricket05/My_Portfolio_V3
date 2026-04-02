@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Github, Linkedin, Mail, ChevronDown } from "lucide-react";
+import { Github, Linkedin, Mail, ChevronDown, Download } from "lucide-react";
 
 const ROLES = [
   "Cybersecurity Analyst",
-  "Identity Governance Engineer",
-  "AI/ML Researcher",
-  "IoT Security Expert",
+  "Software Developer",
+  "IoT Engineer",
+  "AI/ML Developer",
 ];
 
 export default function Hero() {
@@ -68,7 +68,7 @@ export default function Hero() {
           </div>
 
           <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mb-12 leading-relaxed">
-            Driving client-focused Security Engineering in Digital Trust and Privacy.
+            Driving client-focused Security Engineering in Digital Trust and Privacy at Deloitte USI, with a passion for building secure, scalable solutions and exploring the latest in cybersecurity and software development.
           </p>
 
           <div className="flex flex-wrap items-center gap-4">
@@ -78,6 +78,15 @@ export default function Hero() {
               data-testid="hero-cta-contact"
             >
               Initiate Handshake
+            </a>
+            <a
+              href="/resume.pdf"
+              download="Shaurya_Singh_Srinet_Resume.pdf"
+              className="px-8 py-4 bg-secondary text-secondary-foreground font-medium rounded hover:bg-secondary/90 transition-colors font-mono tracking-wide flex items-center gap-2"
+              data-testid="hero-cta-resume"
+            >
+              <Download className="w-5 h-5" />
+              Download Resume
             </a>
             <div className="flex items-center gap-4 ml-4">
               <a
