@@ -5,6 +5,7 @@
   "scripts": {
     "preinstall": "node -e \"try { const fs = require('fs'); ['package-lock.json', 'yarn.lock'].forEach(f => { try { fs.unlinkSync(f); } catch(e) {} }); } catch(e) { console.log('Cleanup skipped'); }\"",
     "build": "pnpm run typecheck && pnpm -r --if-present run build",
+    "start": "pnpm -C artifacts/api-server run start",
     "typecheck:libs": "tsc --build",
     "typecheck": "pnpm run typecheck:libs && pnpm -r --filter \"./artifacts/**\" --filter \"./scripts\" --if-present run typecheck",
     "dev": "concurrently \"cd artifacts/api-server && pnpm run dev\" \"cd artifacts/portfolio && pnpm run dev\"",
