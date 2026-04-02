@@ -9,6 +9,7 @@ const PROJECTS = [
     institution: "SRM Institute of Science and Technology",
     description: "Developed an AI-driven DDoS protection system for cloud environments combining AWS cloud tools and Machine Learning. Engineered real-time detection and mitigation pipelines with scalable automation, validated through IEEE publication.",
     tags: ["AWS", "Machine Learning", "Cloud Security", "Python", "AI"],
+    github: "https://github.com/footcricket05/DDoSWatch",
   },
   {
     id: "fuzzaiot",
@@ -17,6 +18,7 @@ const PROJECTS = [
     institution: "SRM Institute of Science and Technology",
     description: "Designed a security framework for detecting and mitigating DDoS attacks in IoT networks using Dynamic Fuzz Testing and Graph Neural Networks (GNNs). Conducted NS3 simulations to generate realistic traffic data for training GNN models, improving detection accuracy.",
     tags: ["Python", "NS3", "GNNs", "IoT Security", "Dynamic Fuzz Testing"],
+    github: "https://github.com/footcricket05/FuzzAIoT",
   }
 ];
 
@@ -40,48 +42,74 @@ export default function Projects() {
 
         <div className="grid md:grid-cols-2 gap-8">
           {PROJECTS.map((project, index) => (
-            <motion.div
+            <a
               key={project.id}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="group relative bg-card border border-border rounded-xl p-8 hover:border-primary/50 transition-colors shadow-sm hover:shadow-md"
+              href={project.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative bg-card border border-border rounded-xl p-8 hover:border-primary/50 transition-colors shadow-sm hover:shadow-md cursor-pointer"
               data-testid={`project-${project.id}`}
             >
-              <div className="absolute top-0 right-0 w-20 h-20 bg-primary/5 rounded-bl-full -z-10 group-hover:bg-primary/10 transition-colors" />
-              
-              <div className="flex justify-between items-start mb-6">
-                <div>
-                  <h3 className="text-2xl font-bold font-display text-foreground group-hover:text-primary transition-colors">
-                    {project.title}
-                  </h3>
-                  <p className="text-sm font-mono text-muted-foreground mt-2">
-                    {project.institution} | {project.period}
-                  </p>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-100px" }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="h-full"
+              >
+                <div className="absolute top-0 right-0 w-20 h-20 bg-primary/5 rounded-bl-full -z-10 group-hover:bg-primary/10 transition-colors" />
+                
+                <div className="flex justify-between items-start mb-6">
+                  <div>
+                    <h3 className="text-2xl font-bold font-display text-foreground group-hover:text-primary transition-colors">
+                      {project.title}
+                    </h3>
+                    <p className="text-sm font-mono text-muted-foreground mt-2">
+                      {project.institution} | {project.period}
+                    </p>
+                  </div>
+                  <div className="p-2 bg-background border border-border rounded opacity-0 group-hover:opacity-100 transition-opacity">
+                    <ExternalLink className="w-4 h-4 text-primary" />
+                  </div>
                 </div>
-                <div className="p-2 bg-background border border-border rounded opacity-0 group-hover:opacity-100 transition-opacity">
-                  <ExternalLink className="w-4 h-4 text-primary" />
+
+                <p className="text-muted-foreground leading-relaxed mb-8">
+                  {project.description}
+                </p>
+
+                <div className="flex flex-wrap gap-2 mt-auto">
+                  {project.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="px-3 py-1 bg-background border border-border rounded text-xs font-mono text-foreground"
+                    >
+                      {tag}
+                    </span>
+                  ))}
                 </div>
-              </div>
-
-              <p className="text-muted-foreground leading-relaxed mb-8">
-                {project.description}
-              </p>
-
-              <div className="flex flex-wrap gap-2 mt-auto">
-                {project.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="px-3 py-1 bg-background border border-border rounded text-xs font-mono text-foreground"
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            </motion.div>
+              </motion.div>
+            </a>
           ))}
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          className="mt-16 text-center"
+        >
+          <a
+            href="https://github.com/footcricket05"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground font-medium rounded hover:bg-primary/90 transition-colors font-mono tracking-wide"
+            data-testid="view-more-projects"
+          >
+            View more projects
+            <ExternalLink className="w-5 h-5" />
+          </a>
+        </motion.div>
       </div>
     </section>
   );
