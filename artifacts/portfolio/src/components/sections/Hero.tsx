@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Github, Linkedin, Mail, ChevronDown, Download } from "lucide-react";
 
 const ROLES = [
-  "Cybersecurity Analyst",
+  "Security Engineer",
   "Software Developer",
   "IoT Engineer",
   "AI/ML Developer",

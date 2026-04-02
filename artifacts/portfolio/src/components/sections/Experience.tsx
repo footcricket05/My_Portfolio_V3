@@ -4,23 +4,27 @@ import { Briefcase } from "lucide-react";
 const EXPERIENCES = [
   {
     id: 1,
-    role: "Cybersecurity Analyst",
+    role: "Security Engineer 1 (Cybersecurity Analyst)",
     company: "Deloitte USI",
     location: "Hyderabad, Telangana",
     period: "Sept 2025 – Present",
     details: [
-      "Performed identity governance activities across SailPoint ISC, Okta, and Microsoft Entra ID, including access certifications and entitlement reviews",
-      "Defined review scope and approval workflows with business and IT owners; supported SOX, SOC 1/SOC 2, and DFS audit evidence",
-      "Supported application onboarding and governance configuration (roles, entitlements, access profiles, SoD) and executed AD/JDBC/hybrid recertifications"
+      "Performing identity governance activities across SailPoint ISC, Okta, and Microsoft Entra ID, including access certifications and entitlement reviews",
+      "Defining review scope and approval workflows with business and IT owners; supported SOX, SOC 1/SOC 2, and DFS audit evidence",
+      "Supporting application onboarding and governance configuration (roles, entitlements, access profiles, SoD) and executed AD/JDBC/hybrid recertifications"
     ]
   },
   {
     id: 2,
-    role: "SDE",
+    role: "SDE 1",
     company: "Propzing",
     location: "Chennai, Tamil Nadu",
     period: "March 2025 – July 2025",
-    details: []
+    details: [
+      "Built and optimized AI chat agents using LLMs, improving conversational flow, context handling, and response accuracy",
+      "Developed backend workflows using Supabase for secure data handling, user sessions, and API integrations",
+      "Prototyped AI features and scalable pipelines, collaborating cross-functionally to take ideas from concept to production"
+    ]
   },
   {
     id: 3,
@@ -40,7 +44,10 @@ const EXPERIENCES = [
     company: "Christ University, Bangalore",
     location: "Bangalore, Karnataka",
     period: "June 2023 – March 2024",
-    details: []
+    details: [
+      "Conducted research on route learning and spatial navigation, applying both qualitative and quantitative methodologies to analyze human spatial cognition",
+      "Demonstrated strong analytical thinking by exploring the intersection of architecture and human behavior through structured research and critical evaluation"
+    ]
   },
   {
     id: 5,
@@ -48,7 +55,11 @@ const EXPERIENCES = [
     company: "ONEMi.in (Kissht.com)",
     location: "Mumbai, Maharashtra",
     period: "Feb 2023 – May 2023",
-    details: []
+    details: [
+      "Analyzed loan data to uncover customer preferences and optimize lending strategies",
+      "Identified delinquency patterns and key risk factors to support improved credit assessment",
+      "Derived insights on loan ticket size trends and collaborated with teams to inform business decisions and monthly reviews"
+    ]
   }
 ];
 
