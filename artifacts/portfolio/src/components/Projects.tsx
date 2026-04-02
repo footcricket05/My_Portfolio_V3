@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { SiGithub, SiPython, SiFlask, SiJava, SiOpenai } from "react-icons/si";
+import { SiGithub, SiPython, SiFlask, SiOpenai } from "react-icons/si";
 import { ExternalLink, Shield, Image, Languages, Eye, MessageSquare, Cpu } from "lucide-react";
 
 const PROJECTS = [
