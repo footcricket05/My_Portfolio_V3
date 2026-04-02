@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Award, ShieldCheck, FileText, Trophy } from "lucide-react";
+import { Award, ShieldCheck, FileText, Trophy, ExternalLink } from "lucide-react";
 
 const CERTIFICATIONS = [
   "Okta Certified Professional",
@@ -32,15 +32,18 @@ const AWARDS = [
 const PUBLICATIONS = [
   {
     title: "DDoS Protection System for Cloud using AWS and Machine Learning",
-    publisher: "IEEE Xplore"
+    publisher: "IEEE Xplore",
+    url: "https://ieeexplore.ieee.org/abstract/document/11113989"
   },
   {
     title: "AI4BCancer: Breast Cancer Classification using AutoML - TPOT with PCA",
-    publisher: "IEEE Xplore"
+    publisher: "IEEE Xplore",
+    url: "https://ieeexplore.ieee.org/document/10842827"
   },
   {
     title: "AI-Driven Dynamic Fuzz Testing for IoT Security",
-    publisher: "Springer"
+    publisher: "Springer",
+    url: "https://link.springer.com/chapter/10.1007/978-981-95-0144-1_29"
   }
 ];
 
@@ -124,12 +127,21 @@ export default function Certifications() {
             </div>
             <ul className="space-y-6">
               {PUBLICATIONS.map((pub, i) => (
-                <li key={i} className="group">
-                  <h4 className="font-medium text-foreground text-sm leading-relaxed group-hover:text-primary transition-colors">{pub.title}</h4>
+                <a
+                  key={i}
+                  href={pub.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group block cursor-pointer"
+                >
+                  <div className="flex items-start justify-between gap-2">
+                    <h4 className="font-medium text-foreground text-sm leading-relaxed group-hover:text-primary transition-colors flex-1">{pub.title}</h4>
+                    <ExternalLink className="w-4 h-4 text-primary opacity-0 group-hover:opacity-100 transition-opacity flex-shrink-0 mt-1" />
+                  </div>
                   <p className="text-xs font-mono text-muted-foreground mt-2 bg-primary/10 text-primary w-fit px-2 py-1 rounded">
                     {pub.publisher}
                   </p>
-                </li>
+                </a>
               ))}
             </ul>
           </motion.div>
