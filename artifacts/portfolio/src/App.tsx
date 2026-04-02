@@ -32,7 +32,7 @@ function Portfolio() {
 
       <footer className="py-8 border-t border-border text-center bg-card">
         <p className="text-muted-foreground font-mono text-sm">
-          Built securely by Shaurya Singh Srinet
+          Built securely by Shaurya Srinet
         </p>
       </footer>
 
