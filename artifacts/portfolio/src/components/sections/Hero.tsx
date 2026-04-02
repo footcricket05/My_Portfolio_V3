@@ -101,10 +101,11 @@ export default function Hero() {
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
-                href="mailto:shauryasrinet@gmail.com"
+                href="mailto:ssrinet@deloitte.com?subject=Let's%20Connect"
                 className="p-3 text-muted-foreground hover:text-foreground border border-border rounded hover:bg-muted transition-all"
                 data-testid="hero-link-email"
                 aria-label="Email"
+                role="link"
               >
                 <Mail className="w-5 h-5" />
               </a>
