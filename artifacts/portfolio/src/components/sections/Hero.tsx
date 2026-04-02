@@ -38,16 +38,16 @@ export default function Hero() {
           transition={{ duration: 0.5 }}
           className="max-w-4xl"
         >
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-mono mb-8" data-testid="hero-badge">
-            <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-            Available for new opportunities
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs sm:text-sm font-mono mb-6 sm:mb-8" data-testid="hero-badge">
+            <span className="w-2 h-2 rounded-full bg-primary animate-pulse flex-shrink-0" />
+            <span className="whitespace-nowrap">Available for opportunities</span>
           </div>
 
-          <h1 className="font-display text-5xl md:text-7xl font-bold tracking-tight mb-6 text-foreground">
+          <h1 className="font-display text-3xl sm:text-5xl md:text-7xl font-bold tracking-tight mb-4 sm:mb-6 text-foreground">
             Shaurya Singh Srinet
           </h1>
 
-          <div className="h-12 md:h-16 mb-6 flex items-center">
+          <div className="h-10 sm:h-12 md:h-16 mb-4 sm:mb-6 flex items-center">
             <AnimatePresence mode="wait">
               <motion.div
                 key={roleIndex}
@@ -55,26 +55,26 @@ export default function Hero() {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -20 }}
                 transition={{ duration: 0.3 }}
-                className="font-mono text-2xl md:text-3xl text-muted-foreground"
+                className="font-mono text-base sm:text-2xl md:text-3xl text-muted-foreground"
               >
                 &gt; {ROLES[roleIndex]}
                 <motion.span
                   animate={{ opacity: [1, 0] }}
                   transition={{ repeat: Infinity, duration: 0.8 }}
-                  className="inline-block w-3 h-8 md:h-10 ml-2 align-middle bg-primary"
+                  className="inline-block w-2 h-6 sm:h-8 md:h-10 ml-2 align-middle bg-primary"
                 />
               </motion.div>
             </AnimatePresence>
           </div>
 
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mb-12 leading-relaxed">
+          <p className="text-sm sm:text-lg md:text-xl lg:text-2xl text-muted-foreground max-w-2xl mb-8 sm:mb-12 leading-relaxed">
             Driving client-focused Security Engineering in Digital Trust and Privacy at Deloitte USI, with a passion for building secure, scalable solutions and exploring the latest in cybersecurity and software development.
           </p>
 
-          <div className="flex flex-wrap items-center gap-4">
+          <div className="flex flex-col sm:flex-row flex-wrap items-center gap-3 sm:gap-4">
             <a
               href="#contact"
-              className="px-8 py-4 bg-primary text-primary-foreground font-medium rounded hover:bg-primary/90 transition-colors font-mono tracking-wide"
+              className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-primary text-primary-foreground font-medium rounded hover:bg-primary/90 transition-colors font-mono tracking-wide text-center text-sm sm:text-base"
               data-testid="hero-cta-contact"
             >
               Initiate Handshake
@@ -83,41 +83,41 @@ export default function Hero() {
               href="https://drive.google.com/file/d/1Dsn0b_fU_3DQmZmMEkm1NhpkuYgrP_x-/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-4 bg-secondary text-secondary-foreground font-medium rounded hover:bg-secondary/90 transition-colors font-mono tracking-wide flex items-center gap-2"
+              className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-secondary text-secondary-foreground font-medium rounded hover:bg-secondary/90 transition-colors font-mono tracking-wide flex items-center justify-center gap-2 text-sm sm:text-base"
               data-testid="hero-cta-resume"
             >
-              <Download className="w-5 h-5" />
+              <Download className="w-4 sm:w-5 h-4 sm:h-5" />
               View Resume
             </a>
-            <div className="flex items-center gap-4 ml-4">
+            <div className="flex items-center gap-2 sm:gap-4 mt-2 sm:mt-0">
               <a
                 href="https://github.com/footcricket05"
                 target="_blank"
                 rel="noreferrer"
-                className="p-3 text-muted-foreground hover:text-foreground border border-border rounded hover:bg-muted transition-all"
+                className="p-2 sm:p-3 text-muted-foreground hover:text-foreground border border-border rounded hover:bg-muted transition-all"
                 data-testid="hero-link-github"
                 aria-label="GitHub"
               >
-                <Github className="w-5 h-5" />
+                <Github className="w-4 sm:w-5 h-4 sm:h-5" />
               </a>
               <a
                 href="https://linkedin.com/in/shaurya-srinet"
                 target="_blank"
                 rel="noreferrer"
-                className="p-3 text-muted-foreground hover:text-foreground border border-border rounded hover:bg-muted transition-all"
+                className="p-2 sm:p-3 text-muted-foreground hover:text-foreground border border-border rounded hover:bg-muted transition-all"
                 data-testid="hero-link-linkedin"
                 aria-label="LinkedIn"
               >
-                <Linkedin className="w-5 h-5" />
+                <Linkedin className="w-4 sm:w-5 h-4 sm:h-5" />
               </a>
               <a
                 href="mailto:ssrinet@deloitte.com?subject=Let's%20Connect"
-                className="p-3 text-muted-foreground hover:text-foreground border border-border rounded hover:bg-muted transition-all"
+                className="p-2 sm:p-3 text-muted-foreground hover:text-foreground border border-border rounded hover:bg-muted transition-all"
                 data-testid="hero-link-email"
                 aria-label="Email"
                 role="link"
               >
-                <Mail className="w-5 h-5" />
+                <Mail className="w-4 sm:w-5 h-4 sm:h-5" />
               </a>
             </div>
           </div>
