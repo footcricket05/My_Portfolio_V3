@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import { Cpu, Server, Database, Cloud, Wrench, Shield, Zap, Lock } from "lucide-react";
-import { SiPython, SiCplusplus, SiJava, SiTensorflow, SiPytorch, SiKeras, SiScikitlearn, SiPostgresql, SiMysql, SiApachekafka, SiDocker, SiKubernetes, SiTerraform, SiGit, SiGithub, SiPostman, SiAmazonaws, SiApachespark } from "react-icons/si";
+import { Cpu, Server, Database, Cloud, Wrench, Shield, Zap, Lock, Code } from "lucide-react";
+import { SiPython, SiCplusplus, SiTensorflow, SiPytorch, SiKeras, SiScikitlearn, SiPostgresql, SiMysql, SiApachekafka, SiDocker, SiKubernetes, SiTerraform, SiGit, SiGithub, SiPostman, SiApachespark } from "react-icons/si";
 
 const SKILL_CATEGORIES = [
   {
@@ -10,7 +10,7 @@ const SKILL_CATEGORIES = [
     skills: [
       { name: "Python", icon: <SiPython className="w-4 h-4" /> },
       { name: "C++", icon: <SiCplusplus className="w-4 h-4" /> },
-      { name: "Java", icon: <SiJava className="w-4 h-4" /> },
+      { name: "Java", icon: <Code className="w-4 h-4" /> },
       { name: "SQL", icon: <Database className="w-4 h-4" /> }
     ]
   },
@@ -42,7 +42,7 @@ const SKILL_CATEGORIES = [
     title: "IoT & Cloud",
     icon: <Cloud className="w-5 h-5" />,
     skills: [
-      { name: "AWS", icon: <SiAmazonaws className="w-4 h-4" /> },
+      { name: "AWS", icon: <Cloud className="w-4 h-4" /> },
       { name: "Docker", icon: <SiDocker className="w-4 h-4" /> },
       { name: "Kubernetes", icon: <SiKubernetes className="w-4 h-4" /> },
       { name: "Terraform", icon: <SiTerraform className="w-4 h-4" /> },
