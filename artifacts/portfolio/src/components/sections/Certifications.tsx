@@ -2,11 +2,13 @@ import { motion } from "framer-motion";
 import { Award, ShieldCheck, FileText, Trophy } from "lucide-react";
 
 const CERTIFICATIONS = [
-  "OCI Generative AI Certified Professional (June 2024)",
-  "Alteryx Designer Core Certified",
+  "Okta Certified Professional",
   "SailPoint Identity Security Leader Credential",
   "SailPoint Identity Security Professional Credential",
-  "Saviynt Identity Security for AI Age",
+  "Oracle Cloud Infrastructure 2025 Certified Multicloud Architect Professional",
+  "Oracle Analytics Cloud 2025 Professional",
+  "Oracle Cloud Infrastructure 2024 Generative AI Certified Professional",
+  "Alteryx Designer Core Certified",
 ];
 
 const AWARDS = [
