@@ -71,7 +71,7 @@ export default function Hero() {
             Driving client-focused Security Engineering in Digital Trust and Privacy at Deloitte USI, with a passion for building secure, scalable solutions and exploring the latest in cybersecurity and software development.
           </p>
 
-          <div className="flex flex-col sm:flex-row flex-wrap items-center gap-3 sm:gap-4">
+          <div className="flex flex-col sm:flex-row flex-wrap items-center gap-3 sm:gap-4 mb-12 sm:mb-8">
             <a
               href="#contact"
               className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-primary text-primary-foreground font-medium rounded hover:bg-primary/90 transition-colors font-mono tracking-wide text-center text-sm sm:text-base"
