@@ -1,6 +1,6 @@
 [build]
   publish = "artifacts/portfolio/dist/public"
-  command = "pnpm install --ignore-scripts && pnpm build"
+  command = "pnpm install --no-frozen-lockfile --ignore-scripts && pnpm build"
 
 [[redirects]]
   from = "/*"
