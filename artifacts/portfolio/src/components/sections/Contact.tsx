@@ -71,12 +71,12 @@ export default function Contact() {
               </h3>
               
               <div className="space-y-6">
-                <a href="mailto:shauryasrinet@gmail.com" className="flex items-center gap-4 text-muted-foreground hover:text-primary transition-colors group">
+                <a href="mailto:ssrinet@deloitte.com" className="flex items-center gap-4 text-muted-foreground hover:text-primary transition-colors group">
                   <div className="p-3 bg-background border border-border rounded group-hover:border-primary/50 transition-colors">
                     <Mail className="w-5 h-5" />
                   </div>
                   <div className="font-mono text-sm break-all">
-                    shauryasrinet@gmail.com
+                    ssrinet@deloitte.com
                   </div>
                 </a>
                 

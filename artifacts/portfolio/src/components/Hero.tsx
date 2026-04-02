@@ -116,7 +116,7 @@ export default function Hero() {
             { icon: SiGithub, href: "https://github.com/footcricket05", label: "GitHub" },
             { icon: Linkedin, href: "https://linkedin.com/in/shaurya-srinet", label: "LinkedIn" },
             { icon: SiX, href: "https://twitter.com/ShauryaSrinet", label: "Twitter" },
-            { icon: Mail, href: "mailto:shauryasrinet@gmail.com", label: "Email" },
+            { icon: Mail, href: "mailto:ssrinet@deloitte.com", label: "Email" },
           ].map((social, i) => (
             <a
               key={social.label}

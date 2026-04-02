@@ -49,7 +49,7 @@ export default function Contact() {
             </p>
 
             <a
-              href="mailto:shauryasrinet@gmail.com"
+              href="mailto:ssrinet@deloitte.com"
               data-testid="contact-email-link"
               className="group flex items-center gap-4 p-5 bg-card border border-white/10 hover:border-primary/40 rounded-xl transition-all"
             >
@@ -59,7 +59,7 @@ export default function Contact() {
               <div>
                 <p className="text-xs font-mono text-muted-foreground mb-1">EMAIL</p>
                 <p className="font-mono text-foreground group-hover:text-primary transition-colors">
-                  shauryasrinet@gmail.com
+                  ssrinet@deloitte.com
                 </p>
               </div>
             </a>
