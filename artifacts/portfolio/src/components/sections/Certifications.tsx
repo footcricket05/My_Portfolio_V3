@@ -3,7 +3,7 @@ import { Award, ShieldCheck, FileText, Trophy, ExternalLink } from "lucide-react
 
 const CERTIFICATIONS = [
   "SailPoint Identity Security Expert Credential",
-  "Okta Certified Professional",
+  "Okta Certified Professional", 
   "OCI 2025 Certified Multicloud Architect Professional",
   "Oracle Analytics Cloud 2025 Professional",
   "OCI 2024 Generative AI Certified Professional",
