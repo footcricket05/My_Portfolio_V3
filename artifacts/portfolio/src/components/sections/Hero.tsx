@@ -80,7 +80,7 @@ export default function Hero() {
               Initiate Handshake
             </a>
             <a
-              href="https://drive.google.com/file/d/1Dsn0b_fU_3DQmZmMEkm1NhpkuYgrP_x-/view?usp=sharing"
+              href="https://drive.google.com/file/d/1wzK5hsyfPnOKKnFfygtX86-pQE85ifjk/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-secondary text-secondary-foreground font-medium rounded hover:bg-secondary/90 transition-colors font-mono tracking-wide flex items-center justify-center gap-2 text-sm sm:text-base"
