@@ -1,8 +1,8 @@
 function readPackage(pkg, context) {
-  // Allow build scripts for esbuild
+  // Allow build scripts for packages
   if (pkg.name === 'esbuild') {
-    pkg.pnpm = pkg.pnpm || {};
-    pkg.pnpm.allowBuild = true;
+    // Set the allowBuild property to true
+    delete pkg.pnpm;
   }
   return pkg;
 }
@@ -12,4 +12,5 @@ module.exports = {
     readPackage,
   },
 }
+
 

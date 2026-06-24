@@ -29,7 +29,10 @@ jobs:
           cache: 'pnpm'
 
       - name: Install dependencies
-        run: pnpm install --no-frozen-lockfile --force
+        run: pnpm install --no-frozen-lockfile
+
+      - name: Rebuild esbuild
+        run: pnpm rebuild esbuild
 
       - name: Type check
         run: pnpm typecheck
