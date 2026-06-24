@@ -16,7 +16,7 @@ const PROJECTS = [
     title: "FuzzAIoT",
     period: "Jul 2024 – Oct 2024",
     institution: "SRM Institute of Science and Technology",
-    description: "Designed a security framework for detecting and mitigating DDoS attacks in IoT networks using Dynamic Fuzz Testing and Graph Neural Networks (GNNs). Conducted NS3 simulations to generate realistic traffic data for training GNN models, improving detection accuracy.",
+    description: "Designed a security framework for detecting and mitigating DDoS attacks in IoT networks using Dynamic Fuzz Testing and Graph Neural Networks (GNNs). Conducted NS3 simulations to generate realistic traffic data for training GNN models, improving detection accuracy, validated through Springer publication",
     tags: ["Python", "NS3", "GNNs", "IoT Security", "Dynamic Fuzz Testing"],
     github: "https://github.com/footcricket05/FuzzAIoT",
   }
