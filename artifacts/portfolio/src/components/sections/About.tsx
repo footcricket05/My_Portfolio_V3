@@ -28,7 +28,7 @@ export default function About() {
             className="space-y-6 text-muted-foreground text-lg leading-relaxed"
           >
             <p>
-              I'm <strong className="text-foreground font-semibold">Shaurya Singh Srinet</strong>, a Cybersecurity Analyst currently driving impactful security engineering at Deloitte USI. I specialize in Identity Governance and Administration (IGA), ensuring that the right people have the right access at the right time.
+              I'm <strong className="text-foreground font-semibold">Shaurya Singh Srinet</strong>, a Security Engineer 1 currently driving impactful security engineering at Deloitte USI. I specialize in Identity Governance and Administration (IGA), ensuring that the right people have the right access at the right time.
             </p>
             <p>
               My background bridges the gap between infrastructure security and cutting-edge research. I've designed AI-driven DDoS protection systems and integrated complex data pipelines, operating at the intersection of security, cloud architecture, and machine learning.
@@ -60,7 +60,7 @@ export default function About() {
                 </div>
                 <div>
                   <p className="font-medium text-foreground">Current Role</p>
-                  <p className="text-muted-foreground">Cybersecurity Analyst @ Deloitte USI</p>
+                  <p className="text-muted-foreground">Security Engineer 1 @ Deloitte USI</p>
                 </div>
               </li>
               

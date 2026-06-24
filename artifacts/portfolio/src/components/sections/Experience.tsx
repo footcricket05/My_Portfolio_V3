@@ -4,7 +4,7 @@ import { Briefcase } from "lucide-react";
 const EXPERIENCES = [
   {
     id: 1,
-    role: "Security Engineer 1 (Cybersecurity Analyst)",
+    role: "Security Engineer 1",
     company: "Deloitte USI",
     location: "Hyderabad, Telangana",
     period: "Sept 2025 – Present",
