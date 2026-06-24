@@ -96,7 +96,9 @@ export default function Hero() {
             </span>
           </a>
           <a
-            href="#"
+            href="https://drive.google.com/file/d/1qeBe8jUlTkd_SCYyjQ_5Xm1xIvrhmpZL/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
             data-testid="link-resume"
             className="group inline-flex h-14 items-center justify-center overflow-hidden rounded-md border border-primary/30 bg-transparent px-8 font-medium text-primary transition-all hover:bg-primary/10 glow-border"
           >
