@@ -96,7 +96,7 @@ export default function Hero() {
             </span>
           </a>
           <a
-            href="https://drive.google.com/file/d/1qeBe8jUlTkd_SCYyjQ_5Xm1xIvrhmpZL/view?usp=sharing"
+            href="https://drive.google.com/file/d/1qeBe8jUlTkd_SCYyjQ_5Xm1xIvrhmpZL/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
             data-testid="link-resume"
