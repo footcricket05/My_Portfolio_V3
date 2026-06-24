@@ -64,6 +64,8 @@ catalogs:
       specifier: ^3.25.76
       version: 3.25.76
 
+pnpmfileChecksum: z5eltwbcsgp3ve4dpvlydz3z4y
+
 importers:
 
   .:
