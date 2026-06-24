@@ -4,13 +4,6 @@ import tailwindcss from "@tailwindcss/vite";
 import path from "path";
 import { mockupPreviewPlugin } from "./mockupPreviewPlugin";
 
-let runtimeErrorOverlay;
-try {
-  runtimeErrorOverlay = await import("@replit/vite-plugin-runtime-error-modal").then(m => m.default);
-} catch {
-  runtimeErrorOverlay = null;
-}
-
 const rawPort = process.env.PORT || "5174";
 const port = Number(rawPort);
 
@@ -26,7 +19,6 @@ export default defineConfig({
     mockupPreviewPlugin(),
     react(),
     tailwindcss(),
-    ...(runtimeErrorOverlay ? [runtimeErrorOverlay()] : []),
   ],
   resolve: {
     alias: {
