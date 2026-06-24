@@ -1,5 +1,5 @@
 function readPackage(pkg, context) {
-  // Allow esbuild to run its build scripts
+  // Allow build scripts for esbuild
   if (pkg.name === 'esbuild') {
     pkg.pnpm = pkg.pnpm || {};
     pkg.pnpm.allowBuild = true;
@@ -12,3 +12,4 @@ module.exports = {
     readPackage,
   },
 }
+
