@@ -28,11 +28,8 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: 'pnpm'
 
-      - name: Configure pnpm to allow builds
-        run: pnpm config set ignored-scripts []
-
       - name: Install dependencies
-        run: pnpm install --no-frozen-lockfile
+        run: pnpm install --no-frozen-lockfile --force
 
       - name: Type check
         run: pnpm typecheck
