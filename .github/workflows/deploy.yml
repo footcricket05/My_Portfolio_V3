@@ -28,8 +28,11 @@ jobs:
           node-version: '22'
           cache: 'pnpm'
 
+      - name: Approve build scripts
+        run: pnpm approve-builds esbuild || true
+
       - name: Install dependencies
-        run: pnpm install --no-frozen-lockfile --ignore-scripts
+        run: pnpm install --no-frozen-lockfile
 
       - name: Type check
         run: pnpm typecheck
